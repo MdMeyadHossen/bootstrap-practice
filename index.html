@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap templet</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+  </head>
+  <body>
+<!-- form start -->
+    <form>
+      <h1>Form overview</h1>
+      <div class="mb-3 ms-3 me-3">
+        <label for="email1" class="label">Email address</label>
+        <input type="email" class="form-control" id="email1" required>
+      </div>
+      <div class="mb-3 ms-3 me-3">
+        <label for="password1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password1" required>
+      </div>
+      <button type="submit" class="ms-3 btn btn-primary">Submit</button>
+    </form>
+    <!-- form end -->
+
+    <!-- Form controls start -->
+    <div class="mb-3 ms-3 me-3">
+      <h1>Form controls</h1>
+      <label for="controlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="controlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3 ms-3 me-3">
+      <label for="controlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+    </div>
+    <!-- Form controls end -->
+    <!-- select start -->
+      <h1>Form select</h1>
+      <form>
+    <select class="form-select mb-3 ms-3 me-3" multiple aria-label="multiple select">
+      <option selected>Open this select menu</option>
+      <option value="1">apple</option>
+      <option value="2">lemon</option>
+      <option value="3">orange</option>
+    </select>
+    <button type="submit" class="ms-3 btn btn-primary">Submit</button>
+  </form>
+  <!-- select end -->
+  <!-- Form Validation start -->
+  
+  <h1>Form Validation</h1>
+  <form>
+
+  <div class="container">
+  
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="meyad" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" value="hossen" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">State</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</form>
+<!-- Form Validation end -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js "></script>
+  </body>
+</html>
